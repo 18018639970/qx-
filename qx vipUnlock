@@ -84,3 +84,10 @@ https://zhuanlan\.zhihu\.com/api/articles/\d+/recommendation url reject-200
 #知乎结束
 # > 威锋
 ^https?:\/\/api\.feng\.com\/v\d\/advertisement\/.*Claunch url reject-200
+
+#  高德
+^https:\/\/m5.amap.com\/ws\/valueadded\/ url reject
+^https:\/\/m\d\.amap\.com\/ws\/valueadded\/alimama\/splash_screen\/ url reject
+
+#B站解锁HD
+https:\/\/ap(p|i)\.bilibili\.com\/((pgc\/player\/api\/playurl)|(x\/v2\/account\/myinfo\?)|(x\/v2\/account/mine\?)) url script-response-body https://raw.githubusercontent.com/JQWS/GuangZhuiQuanX/main/rewrite/bilibili/BiliHD.js
