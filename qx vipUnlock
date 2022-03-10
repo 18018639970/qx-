@@ -1,4 +1,4 @@
-hostname = spclient.wg.spotify.com
+hostname = spclient.wg.spotify.com, www.youtube.com, s.youtube.com, m.youtube.com, youtubei.googleapis.com
 
  
 ;^http://example.com/resource1/4/ url reject-dict
